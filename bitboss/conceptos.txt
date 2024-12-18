@@ -48,3 +48,56 @@ POO
 
     Los 4 pilares de POO:
         
+        ##  ABSTRACCION
+            Cuando nosotro hacemos una clase tenemos que seleccionar
+            los Atributos y Metodos que se va a tener, 
+            por ejemplo, 
+            Si queremos definir que es una Cancion no es necesario 
+            incluir todas las caracteristcas, tenemoms que Abstraernos
+            solo las necesarias para el objetivo que tenga planeado.  
+                Por Ejem:
+                    Si tu objetivo es hacer una biblioteca de musica 
+                    los Atributos pueden ser :
+                        * nombre
+                        * artista
+                        * duracion
+                        * genero
+
+                    Como Metodos pueden ser:
+                        * escuchar()
+                        * constructor()
+            
+                    En cambio si tu objetivo es usarlo como una base de 
+                    datos para una pagina de venta, 
+                    los atributos pueden ser:
+                        * nombre 
+                        * artista
+                        * precio
+                    
+                    como Metodos pueden serÑ
+                        * comprar()
+                        * constructor()
+
+            Con la ABSTRACCION elegimos cuales seran los Atributos y los 
+            Metodos que definiran que es una Cancion para nosotros.
+            Otro ejemplo es un Personaje para un juego:
+            
+            Personaje
+                ### Atributos
+                    * nombre
+                    * fuerza
+                    * inteligencia
+                    * defensa
+                    * vida
+                    * posicion
+                    * contador
+
+                ### Metodos
+                    * atacar()
+                    * moverse()
+                    * turno()
+                    * constructor()
+
+            Esta clase nos va a venir muy bien para el siguiente pilar.                     
+                
+
