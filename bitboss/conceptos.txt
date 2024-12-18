@@ -224,3 +224,42 @@ POO
                     * magia()           # nuevo
                     * constructor()     # nuevo
 
+
+        ##  POLIMORFISMO
+            Esto permite a un metodo ser diferente segun que clase lo este usando,
+            es decir, puede tener muchas formas de usarse.
+            Volviendo al ejemplo del Personaje, el Guerrero y el MAgo, las tres clases
+            tienen el metodo atacar que realizan la misma acccion, tiene el mismo codigo
+            pero despues de la herencia podemos volver a definir los Metodos heredados.
+            Por ejemplo, podemos cambiar la funcionalidad del Metodo atacar(). Personaje
+            usaba la estadistica Fuerxa para atacar() con las manos pero queremos que el 
+            metodo atacar() de la clase Guerreo haga otra cosa, comoo incrementar el daño
+            a partir del arma que use. O por ejemplo que la clase Mago al usar libros pueda
+            atacar por medio de la estadistica inteligencia. Esta ventaja se puede explotar
+            sobre todo en lenguajes fuertemente tipados como Java donde hay que declara el 
+            tipo de variable
+            Ejem:
+                Si creas una variable de tipo Personaje no podria recibir un objeto tipo 
+                cancion, solo un objeto tipo Personaje o que herede de el.
+                
+                    Personaje jugador = new Personaje(); ----> Guerreo()
+                                                        |___ > Mago()
+                
+                Si nosotros despues justo despues llamamos al Metodo atacar() para calcular cuandto daño ha 
+                realizado, segun que clase reciba, lo calculara de distintas formas, . . .
+                    
+                    Ingeger daño = jugador.atacar();                    
+                
+                Esto es muy util ya que asi se puede crear una funcion que calcule el daño
+                independientemente de que clase reciba
+
+                    public Integer daño(Personaje jugador){
+                        return jugador.atacar();
+                    }
+
+                Si no utilizaramos el polimorfismo por herencia, tendriamos que hacer una funcion
+                diferente por cada Clase 
+
+    Ahora ya sabemos los principios de la programacion orienta a objetos
+                
+
