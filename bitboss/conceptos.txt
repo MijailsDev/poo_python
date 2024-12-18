@@ -1,0 +1,50 @@
+POO
+    Es un paradigma de programacion que modula nuestro codigo
+    haciendolo mas entendible y reutilizable
+
+    Se basa en crear tipos nuevos de datos a los que 
+    llamaremos objetos
+
+    Para ello trataremos nuestro codigo en dos partes:
+        * Propiedades -> a los datos los llamaremos Atributos
+        * Funciones ->  a las funciones le llamaremos Metodos
+
+        ### Atributos:
+            Son las propiedades que definen al objeto
+            Ejem de taza:
+                * volumen
+                * liquido
+                * cantidad
+
+
+        ### Metodos: 
+            Son las acciones que puede realizar  
+            Ejem de taza:
+                * llenar()
+                * beber()
+                * vaciar()
+
+    Para especificar que queremos crear un tipo de dato nuevo
+    se usa la Clase 
+
+    Clase: 
+        Es la plantilla  donde definiremos los Atributos y los
+        Metodos  
+        
+        Con esta plantilla se pueden crear objetos de ese tipo 
+        dandoles valores a sus Atributos, esto es conocido como
+        INSTANCIAR
+        Para instanciarlo se hace uso del metodo CONSTRUCTOR, un
+        metodo que sirve para crear el objeto y darle los valores
+        necesarios para iniciarlo. En nombre del metodo
+        CONSTRUCTOR depende del lenguaje que estas usando
+        Ejem: 
+            ### en Python -> __init__( )
+            ### en Java -> __init__( )
+
+        Debes saber una vez creado el objeto puedes acceder con
+        un punto a sus Atributos, ya sea para consiltarlos,
+        modificarlos o para utilizar sus Metodos
+
+    Los 4 pilares de POO:
+        
