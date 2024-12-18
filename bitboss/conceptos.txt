@@ -101,3 +101,48 @@ POO
             Esta clase nos va a venir muy bien para el siguiente pilar.                     
                 
 
+        ##  ENCAPSULACION
+            Nosotros podemos hacer un programa por medio de varias 
+            clases que se comuniquen entre si, a esto se le llama Modularidada,
+            es bastante util si falla algo en nuestro programa es mas facil
+            detectar donde y que debemos arreglar. Cada clase debe tener 
+            control propio de los sucede dentro y tener los metodos adecuados
+            para poder ser utilizada desde fuera. Si nosotros usamos un punto(.)
+            con nuetra clase Personaje podriamos tener acceso a todos los
+            Atributos y Metodos que contienen, lo cual puede ser peligroso, 
+            porque podriamos alterar su comportamiento interno.
+            Para solucionarlo podemos declarar cuales de nuestros Atributos y
+            Metodos van a ser privados, esto es lo que se conoce ENCAPSULACION.
+
+            Por ejemplo, para nuestra clase Personaje queremos que entre sus 4 
+            Metodos solo sea accsesible el constructor() para poder crear el 
+            objeto y turno() que gestiona la funcionalidad de la clase, 
+            turno() dependiendo del atributo Contador y los deseos del usuario
+            controla las acciones de ataca()r y moverse(), gastando contadores 
+            cada vez que se usen,si no hay contadores el metodo termina.
+            Como turno() es quien controla la ejecucion de los Metodos atacar() y 
+            moverse(), estos debenser privados, ya que no queremos que estos
+            Metodos se ejecuten desde fuera sin ser gestionados por turno().
+            Desde fuera no serian accesibles a traves del punto, evitando que
+            se puediera atacar() o moverse() sin restar contadores, pero turno()
+            al estar dentro de la clase si los podria usar. 
+            
+            Al igual que con los Metodos se pueden hacer lo mismo con los Atributos 
+
+            Puedes crear Metodos de acceso y modificacion de los Atributos, dentro
+            de estos Metodos podemos tener control sobre ellos. Estos Metodos se 
+            suelen nombrar con el prefijo GET para acceder y SET para modificar,
+            por ejemplo nosotros queremos que Contador pueda consultarse y
+            modificarse desde fuera ya que es importante para que funcione 
+            correctamente  turno(), pero no queremos que se introduzca un numero 
+            negativo. Dentro del Metodo setContador() podemos incluir un IF para 
+            asegurar que si  se introduce un numero negativo no cambie de valor 
+            de Contador e informe que hay un fallo.
+
+            En resumen  si no declaramos los Atributos como privados podemos usar 
+            los Atributos desde fuera sin ningun tipo de control. Pero al declararlo
+            como privado estos no podran consultarse ni modificarse a no ser que 
+            usemos los Metodos GEt y SET
+
+            Definir Atributos y Metodos como publicos o privados dependen del
+            lenguaje.
