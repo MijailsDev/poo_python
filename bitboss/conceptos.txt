@@ -120,7 +120,7 @@ POO
             Metodos solo sea accsesible el constructor() para poder crear el 
             objeto y turno() que gestiona la funcionalidad de la clase, 
             turno() dependiendo del atributo Contador y los deseos del usuario
-            controla las acciones de ataca()r y moverse(), gastando contadores 
+            controla las acciones de atacar() y moverse(), gastando contadores 
             cada vez que se usen,si no hay contadores el metodo termina.
             Como turno() es quien controla la ejecucion de los Metodos atacar() y 
             moverse(), estos debenser privados, ya que no queremos que estos
@@ -228,11 +228,11 @@ POO
         ##  POLIMORFISMO
             Esto permite a un metodo ser diferente segun que clase lo este usando,
             es decir, puede tener muchas formas de usarse.
-            Volviendo al ejemplo del Personaje, el Guerrero y el MAgo, las tres clases
+            Volviendo al ejemplo del Personaje, el Guerrero y el Mago, las tres clases
             tienen el metodo atacar que realizan la misma acccion, tiene el mismo codigo
             pero despues de la herencia podemos volver a definir los Metodos heredados.
             Por ejemplo, podemos cambiar la funcionalidad del Metodo atacar(). Personaje
-            usaba la estadistica Fuerxa para atacar() con las manos pero queremos que el 
+            usaba la estadistica Fuerza para atacar() con las manos pero queremos que el 
             metodo atacar() de la clase Guerreo haga otra cosa, comoo incrementar el daño
             a partir del arma que use. O por ejemplo que la clase Mago al usar libros pueda
             atacar por medio de la estadistica inteligencia. Esta ventaja se puede explotar
@@ -248,7 +248,7 @@ POO
                 Si nosotros despues justo despues llamamos al Metodo atacar() para calcular cuandto daño ha 
                 realizado, segun que clase reciba, lo calculara de distintas formas, . . .
                     
-                    Ingeger daño = jugador.atacar();                    
+                    Integer daño = jugador.atacar();                    
                 
                 Esto es muy util ya que asi se puede crear una funcion que calcule el daño
                 independientemente de que clase reciba
