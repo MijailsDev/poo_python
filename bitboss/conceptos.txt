@@ -97,6 +97,8 @@ POO
                     * moverse()
                     * turno()
                     * constructor()
+                    * getNombre()
+                    * setNombre()
 
             Esta clase nos va a venir muy bien para el siguiente pilar.                     
                 
@@ -146,3 +148,79 @@ POO
 
             Definir Atributos y Metodos como publicos o privados dependen del
             lenguaje.
+
+        
+        ##  HERENCIA
+            Ahora queremos crear la clase Guerreo y Mago, que tienen todos los
+            Atributos y Metodos que tienen todos los Atributos y Metodos que
+            tienen nuestra clase Personaje, mas algunos Atributos y Metodos nuevos.
+            En vez de crear todo de nuevo podemos reutilizar la clase Personaje
+            con la HERENCIA. Tanto la clase Guerrero comom Mago heredaran de la 
+            clase Personaje todos sus Atributos y Metodos, solo nos quedaria 
+            agregar los nuevos     
+
+            Personaje:                        # a este se le conoce como clase Padre O SuperClase
+                ### Atributos
+                    * nombre
+                    * fuerza
+                    * inteligencia
+                    * defensa
+                    * vida
+                    * posicion
+                    * contador
+
+                ### Metodos
+                    * atacar()
+                    * moverse()
+                    * turno()
+                    * constructor()
+                    * getNombre()
+                    * setNombre()
+
+            
+            Guerrero:                       # a la clase heredada se conoce como clase hija o subClase
+                ### Atributos
+                    * nombre
+                    * fuerza
+                    * inteligencia
+                    * defensa
+                    * vida
+                    * posicion
+                    * contador
+
+                    * espada        # nuevo
+                    * armadura      # nuevo
+
+                ### Metodos
+                    * atacar()
+                    * moverse()
+                    * turno()
+                    * getNombre()
+                    * setNombre()
+
+                    * habilidad()       # nuevo
+                    * constructor()     # nuevo
+            
+            
+            Mago:                           # a la clase heredada se conoce como clase hija o subClase
+                ### Atributos
+                    * nombre
+                    * fuerza
+                    * inteligencia
+                    * defensa
+                    * vida
+                    * posicion
+                    * contador
+
+                    * libro     # nuevo
+
+                ### Metodos
+                    * atacar()
+                    * moverse()
+                    * turno()
+                    * getNombre()
+                    * setNombre()
+
+                    * magia()           # nuevo
+                    * constructor()     # nuevo
+
