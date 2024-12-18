@@ -1,6 +1,6 @@
 class Personaje:
     nombre = "Default"
-    fuerte = 0
+    fuerza = 0
     inteligenia = 0
     defensa = 0
     vida = 0
