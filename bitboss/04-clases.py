@@ -3,7 +3,7 @@
 class Personaje:
     nombre = "Default"
     fuerza = 0
-    inteligenia = 0
+    inteligencia = 0
     defensa = 0
     vida = 0
     
@@ -14,7 +14,7 @@ class Personaje:
     def __init__(self, nombre, fuerza, inteligencia, defensa, vida):   # los atributos que usemos para inicializar el objeto
         self.nombre = nombre # nuestro objetivo es cambiar el nombre de la clase por el nombre que recibe del constructor
         self.fuerza = fuerza # lo mismo con la fuerza
-        self.inteligenia = inteligencia
+        self.inteligencia = inteligencia
         self.defensa = defensa
         self.vida = vida 
 
