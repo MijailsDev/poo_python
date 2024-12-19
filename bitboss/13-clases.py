@@ -55,3 +55,5 @@ mi_enemigo = Personaje("Enemy Stando", 8, 5, 3, 7)    # cambias el estado de vid
 mi_personaje.atacar(mi_enemigo)
 mi_enemigo.atributos()  # mostramos la vida actual despues de recibir el ataque
 
+""" Listo ya tenemos nuestro Clase Personaje creada :) """
+
