@@ -1,3 +1,4 @@
+# Abstraccion
 class Personaje:
     nombre = "Default"
     fuerza = 0

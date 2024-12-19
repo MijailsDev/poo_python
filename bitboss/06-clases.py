@@ -1,3 +1,4 @@
+# Abstraccion.
 # Metodo constructor que reciba sus valores
 
 class Personaje:
