@@ -86,7 +86,11 @@ class Personaje:
         daño = self.daño(enemigo)   # calculamos el daño
         enemigo.vida = enemigo.vida - daño
         print(self.nombre, "ha realizado", daño, "puntos de daño a", enemigo.nombre)     # informacion de la accion
-        print("La vida de", enemigo.nombre, "es", enemigo.vida)
+        
+        if enemigo.esta_vivo():
+            print("La vida de", enemigo.nombre, "es", enemigo.vida)    # vida actual del enemigo
+        else:   # entonces si la vida es diferente de cero hara lo siguiente :
+            enemigo.morir()
 
 
 
