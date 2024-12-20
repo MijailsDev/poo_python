@@ -69,6 +69,9 @@ guts = Guerrero("Guts", 20, 10, 10, 100, 5)   # Creamos un objeto Guerrero() yu 
                         #
                         #       Esta funcion nos permite llamar a los Atributos y Metodos
                         #       de la super clase sin tener que escribirla directamente :)
+                        #
+                        #       Esto es util, por ejemplo si cambias el nombre de la superclase 
+                        #       no tienes que preocuparte por cambiarlo tambien dentro del codigo
 
 """
 guts.atributos()    # Funciona correctamente con la funcion super()  :)
