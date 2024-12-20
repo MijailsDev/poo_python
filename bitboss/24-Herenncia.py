@@ -84,3 +84,19 @@ class Guerrero(Personaje):
 guts = Guerrero("Guts", 20, 10, 10, 100, 5)   
 
 guts.atributos()
+
+'''Vamos a hace otra clase que herede de Personaje
+        *Mago '''
+
+class Mago(Personaje):
+
+    def __init__(self, nombre, fuerza, inteligencia, defensa, vida, libro):
+        super().__init__(nombre, fuerza, inteligencia, defensa, vida)
+        self.libro = libro
+    
+    def atributos(self):
+        super().atributos()
+        print(".Libro:", self.libro)
+
+    def daño(self, enemigo):
+        return self.inteligencia*self.libro - enemigo.defensa
