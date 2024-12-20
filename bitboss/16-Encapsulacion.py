@@ -5,6 +5,9 @@
  # Para acceder o modificar los Atributos individualmente, pero con control
     Para esto estan los famosos GETTERS Y SETTERS
 Vamos a usarlo con el Metodo de fuerza()
+    get_fuerza
+    set_fuerza
+
 '''
 
 class Personaje:
@@ -21,6 +24,7 @@ class Personaje:
         print(self.__nombre, ":", sep="")
         print(".Fuerza:", self.__fuerza)
         print(".Inteligenicia", self.__inteligencia)
+
         print(".Defensa", self.__defensa)
         print(".Vida", self.__vida)
 
@@ -54,13 +58,21 @@ class Personaje:
         else:   
             enemigo.__morir()
 
+# El Metodo GET devolvera el atributo
+    def get_fuerza(self):
+        return self.__fuerza
+    
+# El Metodo SET recibira uno nuevo para cambiarlo por el actual
+    def set_fuerza(self, fuerza):
+        self.__fuerza = fuerza
 
 
 mi_personaje = Personaje("BitBoss", 10, 1, 5, 100) 
-mi_enemigo = Personaje("Enemy Stando", 8, 5, 3, 7)    
+mi_enemigo = Personaje("Enemy Stando", 8, 5, 3, 5)    
 
-#mi_personaje.morir()    # como puedes osbservar NO encuentra el Metodo morir(
-#mi_personaje.__morir()     # igual con los 2 guiones bajos
-'''no se puede usar externamente'''
+print(mi_personaje.get_fuerza())    # probamos el GET, y nos muestra la fuerza de nuestro personaje
+mi_personaje.set_fuerza(-5)         # probamos el SET, y cambiamos la fuerza por -5
+mi_personaje.atributos()
 
-mi_personaje.atacar(mi_enemigo)     # Pero si podemos acceder a traves del metodo atacar()
+'''Ya podemos acceder y modificar fuerza() pero con la posibildad
+    de incluir codigo de control'''
