@@ -41,7 +41,7 @@ class Personaje:
     def atacar(self, enemigo):
         daño = self.daño(enemigo)   # calculamos el daño
         enemigo.vida = enemigo.vida - daño
-        print(self.nombre, "ha realizado", daño, "putos de daño a", enemigo.nombre)     # informacion de la accion
+        print(self.nombre, "ha realizado", daño, "puntos de daño a", enemigo.nombre)     # informacion de la accion
         print("La vida de", enemigo.nombre, "es", enemigo.vida)    # vida actual del enemigo
 
 

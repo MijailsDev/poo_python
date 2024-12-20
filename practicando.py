@@ -79,21 +79,31 @@ class Personaje:
         self.vida = 0
         print(self.nombre, "ha muerto")
 
+    def daño(self, enemigo):  # el daño que recibe nuestro Personaje, y al otro personaje que llamaremos enemigo
+        return self.fuerza - enemigo.defensa        
+
+    def atacar(self, enemigo):
+        daño = self.daño(enemigo)   # calculamos el daño
+        enemigo.vida = enemigo.vida - daño
+        print(self.nombre, "ha realizado", daño, "puntos de daño a", enemigo.nombre)     # informacion de la accion
+        print("La vida de", enemigo.nombre, "es", enemigo.vida)
+
+
 
 # ahora le tenemos que pasar los atributos al constructor que hemos especificado antes
-mi_personaje = Personaje("BitBoss", 10, 1, 5, 100000) # creamos un objeto a partir de la clase Personaje
+mi_personaje = Personaje("BitBoss", 10, 20, 50, 1000) # creamos un objeto a partir de la clase Personaje
 mi_personaje.atributos() # llamamos a la funcino a traves de la variable mi_personaje
-mi_personaje.subir_nivel(1, 2, 0)   # subimos de nivel al personaje
+#mi_personaje.subir_nivel(1, 2, 0)   # subimos de nivel al personaje
 mi_personaje.atributos()    # volvemos a mostrar los atributos
 
 mi_enemigo = Personaje(
-                        "Enemy Nro01",  # Nombre
-                         100,           # Fuerza
-                         100,           # Inteligencia
-                         99,            # Defensa
+                        "Black Hat",  # Nombre
+                         10,           # Fuerza
+                         10,           # Inteligencia
+                         3,            # Defensa
                          100)           # Vida
 mi_enemigo.atributos()
-mi_enemigo.subir_nivel(50, 40, 10)
+#mi_enemigo.subir_nivel(50, 40, 10)
 mi_enemigo.atributos()
 
 
@@ -104,8 +114,16 @@ mi_enemigo.esta_vivo()
 print(mi_enemigo.esta_vivo())
 
 
-mi_personaje.morir()    # llamamos al metodo morir
-mi_personaje.atributos()    # mostramos los atributos actuales
+# mi_personaje.morir()    # llamamos al metodo morir
+# mi_personaje.atributos()    # mostramos los atributos actuales
 
-mi_enemigo.morir()
+# mi_enemigo.morir()
+# mi_enemigo.atributos()
+
+mi_personaje.daño(mi_enemigo)
+print(mi_personaje.daño(mi_enemigo)) 
+
+
+
+mi_personaje.atacar(mi_enemigo)
 mi_enemigo.atributos()
